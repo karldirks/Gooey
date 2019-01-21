@@ -3,7 +3,7 @@ from functools import partial
 
 import wx
 
-from gui import three_to_four
+from .. import three_to_four
 
 
 class MenuBar(wx.MenuBar):
