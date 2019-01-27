@@ -69,6 +69,23 @@ def main():
     parser.add_argument("--dirchooser", default="dc-value", widget='DirChooser')
     parser.add_argument("--datechooser", default="2015-01-01", widget='DateChooser')
 
+    parser.add_argument('--num', widget='SpinControl',
+        gooey_options={
+            'initial':30,
+            'min':1,
+            'max':99,
+            'value':'Enter start value'
+        }
+    )
+    parser.add_argument('--num_double', widget='SpinControlDouble',
+        gooey_options={
+            'initial':0.5,
+            'min':0.0,
+            'max':1.0,
+            'inc':0.01
+        }
+    )
+
     dest_vars = [
         'textfield',
         'textarea',
